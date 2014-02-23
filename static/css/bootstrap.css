@@ -1394,10 +1394,10 @@ input[type="number"]::-webkit-inner-spin-button {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
-  border-color: #66afe9;
+  border-color: #778c31;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(119, 140, 49, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(119, 140, 49, 0.6);
 }
 .form-control[disabled],
 .form-control[readonly],
@@ -2229,7 +2229,7 @@ input[type="button"].btn-block {
 .navbar-collapse {
   max-height: 340px;
   overflow-x: visible;
-  padding-right: 15px;
+  /*padding-right: 15px;*/
   padding-left: 15px;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -2476,9 +2476,6 @@ input[type="button"].btn-block {
 }
 
 .formulario {
-  float: right !important;
-  margin-left: -15px;
-  margin-right: -15px;
   padding: 0px 0px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
@@ -2488,7 +2485,12 @@ input[type="button"].btn-block {
   margin-bottom: 8px;
 }
 
-
+@media (min-width: 768px){
+.formulario {
+  float: right !important;
+  margin-left: -15px;
+  margin-right: -15px;
+}}
 
 @media (min-width: 768px) {
   .formulario .form-group {
@@ -3688,8 +3690,33 @@ background-image: url(static/image) /image/slider_soporte.png
 .image
 {
 background-image: url(static/image/slider_soporte.png);
+}
 
+@media (max-width: 770px) {
+.img_oculta {  display: none; }
+}
 
+@media (min-width: 770px) {
+.img_oculta {
+  background: no-repeat scroll 16px 0px transparent;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+}
 
+@media (min-width: 770px) {
+.img_oculta_min {  display: none; }
+}
+
+@media (max-width: 770px) {
+.img_oculta_min {  
+  background: no-repeat scroll 16px 0px transparent;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
 }
 
